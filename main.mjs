@@ -24,7 +24,7 @@ async function main() {
         case '1':
             const desc = await askQuestion('Enter the description: ');
             const todoactiontime = await askQuestion('Enter the action time (HH:MM): ');
-            addTodo(desc, todoactiontime);
+            setTimeout(addTodo(desc, todoactiontime),20000);
             break;
         case '2':
             const deleteId = await askQuestion('Enter the ID to delete: ');
